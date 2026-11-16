@@ -81,5 +81,8 @@ int main() {
     printf("                        \n");
     printf("Thank you for dining with us!\n");
     printf("Have a great day!\n");
+
+    getchar(); // Wait for user input before closing the program
+    getchar(); // Wait for user input before closing the program
     return 0;
 }
