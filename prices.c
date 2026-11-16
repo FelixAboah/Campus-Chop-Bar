@@ -27,7 +27,7 @@ int main() {
     printf("                        \n");
 
     // Ask the user the quantity of each item they want to order
-    float jollof_quantity, waakye_quantity, banku_tilapia_quantity, bottled_water_quantity, soft_drink_quantity, subtotal, service_charge, VAT, total;
+    float jollof_quantity, waakye_quantity, banku_tilapia_quantity, bottled_water_quantity, soft_drink_quantity, subtotal, service_charge, VAT, total, amount_paid, change;
 
     printf("Enter the quantity of each item you want to order:\n");
     printf("Jollof: ");
@@ -68,6 +68,16 @@ int main() {
     printf("Total: GHS%.2f\n", total);
     printf("-------------------------\n");
 
+    printf("Enter the amount paid by the customer: GHS");
+    scanf("%f", &amount_paid);
+
+    // Calculate the change
+    change = amount_paid - total;
+
+    // Display the change
+    printf("Change: GHS%.2f\n", change);
+
+    
     printf("                        \n");
     printf("Thank you for dining with us!\n");
     printf("Have a great day!\n");
